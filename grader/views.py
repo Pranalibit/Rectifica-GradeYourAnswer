@@ -253,6 +253,7 @@ pusher_client = Pusher(app_id='1279596',
 
 def agora_index(request):
     if request.user.is_authenticated:
+
         User = get_user_model()
         all_users = User.objects.exclude(id=request.user.id).only('id', 'username')
         return render(request, 'agora/index.html', {'allUsers': all_users})
