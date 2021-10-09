@@ -136,9 +136,9 @@ def login(request):
         if user is not None:
             auth.login(request, user)
             if user.is_staff:
-                return render(request, 'teacher.html')
+                return render(request, 'index.html')
             elif not user.is_staff:
-                return render(request, 'subjects.html')
+                return render(request, 'index.html')
             else:
                 print('Not working')
                 return render(request, 'index.html')
@@ -250,11 +250,15 @@ pusher_client = Pusher(app_id='1279596',
                        )
 
 
-@login_required(login_url='/admin/')
+
 def agora_index(request):
-    User = get_user_model()
-    all_users = User.objects.exclude(id=request.user.id).only('id', 'username')
-    return render(request, 'agora/index.html', {'allUsers': all_users})
+    if request.user.is_authenticated:
+        User = get_user_model()
+        all_users = User.objects.exclude(id=request.user.id).only('id', 'username')
+        return render(request, 'agora/index.html', {'allUsers': all_users})
+    else:
+        return redirect('login')
+
 
 
 def pusher_auth(request):

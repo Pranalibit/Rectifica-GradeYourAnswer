@@ -32,7 +32,7 @@ INSTALLED_APPS = [
 
     'widget_tweaks',
     'grader.apps.GraderConfig',
-    'django.contrib.admin',
+     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'rectifica',
         'USER': 'postgres',
-        'PASSWORD': 'Prashanth@820',
+        'PASSWORD': 'Pranali@123',
         'HOST': 'localhost'
     }
 }
