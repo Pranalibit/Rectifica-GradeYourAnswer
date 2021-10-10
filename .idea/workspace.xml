@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6c2e69d-02a7-4c5d-8ef7-2cfd6da6a2e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grader/templates/agora/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/grader/templates/agora/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grader/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/grader/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/SL_042620_30310_29.eps" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
