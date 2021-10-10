@@ -13,7 +13,7 @@ Rectifica is fully feature integrated application that could help the education 
 
 # Tech Stack
 1. Django
-2. Vue.js
+2. javascript
 3. Postgres
 4. Agora
 
